@@ -11,9 +11,9 @@
 *
 * */
 
-settings = function (){
+var settingCollection = new Meteor.Collection("cashbitsettings") ;
 
-    var settingCollection = new Meteor.collection("cashbitsettings") ;
+settings = function (){
 
     return {
         read: function(settingName,defaultDoc){
